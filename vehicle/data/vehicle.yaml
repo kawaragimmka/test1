@@ -1,0 +1,36 @@
+# 车辆检测数据集配置 - 四种车辆类型
+# 路径: ./datasets/vehicle/
+# 包含: car(0), bus(1), van(2), truck(3)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ./datasets/vehicle  # dataset root dir
+
+# 训练集 - 合并四个子目录
+train:
+  - 000-car/images/
+  - 001-bus/images/
+  - 002-van/images/
+  - 003-truck/images/
+
+# 验证集 - 使用训练集的一部分（需要手动分割）
+val:
+  - 000-car/images/
+  - 001-bus/images/
+  - 002-van/images/
+  - 003-truck/images/
+
+test:  # test images (optional)
+
+# Classes
+nc: 4  # number of classes
+names:
+  0: car
+  1: bus
+  2: van
+  3: truck
+
+# 数据集统计信息
+# 000-car: 145 JPG images, 145 labels
+# 001-bus: 59 JPG + 52 PNG + 1 JPEG = 112 images, 112 labels ✅
+# 002-van: 105 PNG images, 105 labels ✅
+# 003-truck: 5 JPG + 132 PNG = 137 images, 137 labels ✅

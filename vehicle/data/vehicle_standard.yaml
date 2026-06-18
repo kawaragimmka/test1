@@ -1,0 +1,21 @@
+# 车辆检测数据集 - 标准YOLOv5格式
+# 路径: ./datasets/vehicle/
+
+# Train/val/test sets
+path: ./datasets/vehicle  # dataset root dir
+train: images/train       # train images (relative to path)
+val: images/val           # val images (relative to path)
+test:                     # test images (optional)
+
+# Classes
+nc: 4  # number of classes
+names:
+  0: car
+  1: bus
+  2: van
+  3: truck
+
+# 数据集信息
+# 总图像数: 499
+# 训练集: 399 (80%)
+# 验证集: 100 (20%)
