@@ -1,2 +1,3 @@
 # test1
-trash
+使用ifly3588s作为边缘设备，ifly3588s内置NPU模块，处理性能最高可达6TOPS。使用该NPU需要下载RKNN的SDK开发包。
+RKNN SDK 为NPU提供ifly3588s的AI编程接口，能够帮助用户部署使用RKNN模型，加速AI应用的落地。
